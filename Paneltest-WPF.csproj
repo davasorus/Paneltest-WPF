@@ -2,18 +2,21 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <RootNamespace>Paneltest_WPF</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <UseWindowsForms>True</UseWindowsForms>
+    <SignAssembly>False</SignAssembly>
+    <Version>$(VersionPrefix)</Version>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Theme\" />
-    <Folder Include="MVVM\" />
-    <Folder Include="Images\" />
-    <Folder Include="Core\" />
-    <Folder Include="Fonts\" />
+    <Folder Include="MVVM\Model\" />
   </ItemGroup>
 
 </Project>
