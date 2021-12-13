@@ -32,36 +32,35 @@
             </Grid.RowDefinitions>
 
             <TextBlock Text="PanelTest"
-                   VerticalAlignment="Center"
+                   VerticalAlignment="Top"
                    HorizontalAlignment="Left"
                    Foreground="White"
                    FontSize="22"
-                   Margin="20,0,0,0" />
+                   Margin="20,10,0,0" />
 
             <StackPanel Grid.Row="1">
 
-                <Button Content="Home"
+                <materialDesign:Card>
+                    <Button Content="Home"
                              Height="50"
-
                              FontSize="14"
+                             Command="{Binding HomeViewCommand}"
+                            Margin="1,1,1,1"/>
+                </materialDesign:Card>
 
-                             Command="{Binding HomeViewCommand}" />
-
-                <Button Content="Test1"
+                <materialDesign:Card>
+                    <Button Content="Test1"
                              Height="50"
-
                              FontSize="14"
-
-                             Command="{Binding newView1ViewCommand}" />
+                             Command="{Binding newView1ViewCommand}" 
+                            Margin="1,1,1,1"/>
+                </materialDesign:Card>
 
                 <Button Content="Test2"
                              Height="50"
-
                              FontSize="14" />
-
                 <Button Content="Test3"
                              Height="50"
-
                              FontSize="14" />
             </StackPanel>
 
@@ -70,16 +69,19 @@
                             Margin="10"
                             Content="{Binding CurrentView}" />
             <Button x:Name="closeBtn" Grid.Column="1" 
-                    Content="X" HorizontalAlignment="Left" 
-                    Margin="679,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="closeBtn_Click" Height="38" Width="40"
+                    Content="{materialDesign:PackIcon close}" HorizontalAlignment="Left" 
+                    Margin="671,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="closeBtn_Click" Height="27" Width="47"
                     />
             <Button x:Name="maximizeBtn" Grid.Column="1" 
-                Content="O" HorizontalAlignment="Left" 
-                Margin="639,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="38" Width="40" Click="maximizeBtn_Click"
+                Content="{materialDesign:PackIcon WindowMaximize}" HorizontalAlignment="Left" 
+                Margin="633,0,0,0" VerticalAlignment="Top" 
+                    Background="{x:Null}" BorderBrush="{x:Null}" 
+                    Foreground="White" Height="27" Width="48" 
+                    Click="maximizeBtn_Click"
                     />
             <Button x:Name="minButton" Grid.Column="1" 
-                    Content="-" HorizontalAlignment="Left" 
-                    Margin="604,6,0,0" VerticalAlignment="Top" Width="39" Background="{x:Null}" BorderBrush="{x:Null}"
+                    Content="{materialDesign:PackIcon WindowMinimize}" HorizontalAlignment="Left" 
+                    Margin="602,3,0,0" VerticalAlignment="Top" Width="39" Background="{x:Null}" BorderBrush="{x:Null}" Height="24"
                     />
         </Grid>
     </Border>
