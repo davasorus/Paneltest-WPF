@@ -5,8 +5,7 @@ namespace Paneltest_WPF.MVVM.ViewModel
     internal class MainViewModel : observableObject
     {
         public RelayCommand HomeViewCommand { get; set; }
-        public RelayCommand newView1ViewCommand { get;}
-
+        public RelayCommand newView1ViewCommand { get; }
 
         public HomeViewModel HomeVM { get; set; }
         public newView1ViewModel newView1VM { get; set; }
@@ -30,7 +29,7 @@ namespace Paneltest_WPF.MVVM.ViewModel
 
             CurrentView = HomeVM;
 
-            HomeViewCommand = new RelayCommand(o => 
+            HomeViewCommand = new RelayCommand(o =>
             {
                 CurrentView = HomeVM;
             });

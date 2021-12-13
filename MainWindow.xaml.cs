@@ -11,5 +11,15 @@ namespace Paneltest_WPF
         {
             InitializeComponent();
         }
+
+        private void closeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void maximizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
