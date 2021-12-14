@@ -20,7 +20,7 @@
     </Window.DataContext>
     <Border>
 
-        <Grid>
+        <Grid Margin="-1,0,1,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250" />
                 <ColumnDefinition />
@@ -34,12 +34,12 @@
             <materialDesign:ColorZone materialDesign:ColorZoneAssist.Foreground="DarkGray">
                 <materialDesign:ColorZone Mode="PrimaryDark" Height="68" VerticalAlignment="Center">
                     <StackPanel>
-                        <TextBlock Text="Application Name"
+                        <TextBlock x:Name="appNameLbl" Text="Application Name"
                    HorizontalAlignment="Center"
                    FontSize="22"
                    Margin="50,8,0,0" Width="178" />
 
-                        <TextBlock Text="Application Version"
+                        <TextBlock x:Name="appVersionLbl" Text="Application Version"
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Center"
                    FontSize="16"
@@ -88,7 +88,7 @@
 
             <materialDesign:ColorZone materialDesign:ColorZoneAssist.Foreground="DarkGray" Grid.Column="1">
                 <materialDesign:ColorZone Mode="SecondaryDark" Height="67">
-                    <TextBlock Text="Label Test"
+                    <TextBlock x:Name="formNameLbl" Text="Label Test"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Center"
                                FontSize="24" />
@@ -96,27 +96,30 @@
             </materialDesign:ColorZone>
 
             <Button x:Name="closeBtn" Grid.Column="1"
-                    Content="{materialDesign:PackIcon close}" HorizontalAlignment="Left"
-                    Margin="665,0,0,0" VerticalAlignment="Top"
+                    Content="{materialDesign:PackIcon close,Size=24}" HorizontalAlignment="Left"
+                    Margin="615,-1,0,0" VerticalAlignment="Top"
                     Background="{x:Null}" BorderBrush="{x:Null}"
-                    Foreground="White" Click="closeBtn_Click"
-                    Height="27" Width="47" />
+                    Foreground="White" Click="closeBtn_Click" />
             <Button x:Name="maximizeBtn" Grid.Column="1"
-                Content="{materialDesign:PackIcon WindowMaximize}"
+                Content="{materialDesign:PackIcon WindowMaximize, Size=24}"
                     HorizontalAlignment="Left"
-                Margin="633,0,0,0" VerticalAlignment="Top"
+                Margin="579,0,0,0" VerticalAlignment="Top"
                     Background="{x:Null}" BorderBrush="{x:Null}"
-                    Foreground="White" Height="27" Width="48"
+                    Foreground="White"
                     Click="maximizeBtn_Click" />
             <Button x:Name="minButton" Grid.Column="1"
-                    Content="{materialDesign:PackIcon WindowMinimize}"
+                    Content="{materialDesign:PackIcon WindowMinimize ,Size=24}"
                     HorizontalAlignment="Left"
-                    Margin="602,3,0,0" VerticalAlignment="Top" Width="39"
-                    Background="{x:Null}" BorderBrush="{x:Null}" Height="24"
+                    Margin="542,0,0,0" VerticalAlignment="Top"
+                    Background="{x:Null}" BorderBrush="{x:Null}"
                     Foreground="White" />
             <Image HorizontalAlignment="Left" Height="59" Margin="0,6,0,0"
                    VerticalAlignment="Top" Width="47"
                    Source="/G5L9qP30_400x400.ico" />
+            <Button x:Name="updateBtn" Grid.Column="1" Content="{materialDesign:PackIcon BellCircle,Size=36}" 
+                    HorizontalAlignment="Left" Margin="488,-3,0,0" 
+                    VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" />
+
         </Grid>
     </Border>
 </Window>
