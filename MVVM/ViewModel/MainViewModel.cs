@@ -2,7 +2,7 @@
 
 namespace Paneltest_WPF.MVVM.ViewModel
 {
-    class MainViewModel : observableObject
+    internal class MainViewModel : observableObject
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand newView1ViewCommand { get; }

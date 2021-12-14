@@ -4,8 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     x:Class="Paneltest_WPF.MVVM.View.newView1"
-             mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
+    mc:Ignorable="d"
+    d:DesignHeight="450" d:DesignWidth="800"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+    TextElement.FontWeight="Medium"
+    TextElement.FontSize="14"
+    FontFamily="{materialDesign:MaterialDesignFont}">
     <StackPanel>
         <TextBlock Text="Page 1"
                    Foreground="White"
@@ -18,6 +23,10 @@
                     Height="200"
                     CornerRadius="10"
                     Margin="45,0,0,0">
+                <TextBlock Text="This is a test from Page 1" 
+                           Foreground="Black" TextWrapping="WrapWithOverflow"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
@@ -46,15 +55,30 @@
                         Height="150"
                         Background="#844eff"
                         CornerRadius="10"
-                        Margin="0" />
+                        Margin="0">
+                    <TextBlock Text="This is a test from Page 1" 
+                           Foreground="Black" TextWrapping="WrapWithOverflow"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#4eff91"
-                        CornerRadius="10" />
+                        CornerRadius="10">
+                    <TextBlock Text="This is a test from Page 1" 
+                           Foreground="Black" TextWrapping="WrapWithOverflow"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
-                        CornerRadius="10" />
+                        CornerRadius="10">
+                    <TextBlock Text="This is a test from Page 1" 
+                           Foreground="Black" TextWrapping="WrapWithOverflow"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Center"/>
+                </Border>
             </StackPanel>
         </StackPanel>
     </StackPanel>

@@ -16,6 +16,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="G5L9qP30_400x400.ico" />
+    <None Remove="Images\Artboard125.png" />
+    <None Remove="Images\G5L9qP30_400x400.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\Artboard125.png" />
+    <EmbeddedResource Include="Images\G5L9qP30_400x400.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="MaterialDesignColors" Version="2.0.4" />
     <PackageReference Include="MaterialDesignThemes" Version="4.3.0" />
     <PackageReference Include="MaterialDesignThemes.Wpf" Version="1.0.1" />
@@ -25,6 +36,10 @@
 
   <ItemGroup>
     <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="G5L9qP30_400x400.ico" />
   </ItemGroup>
 
 </Project>
