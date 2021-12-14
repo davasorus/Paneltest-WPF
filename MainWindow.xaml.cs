@@ -19,7 +19,6 @@ namespace Paneltest_WPF
 
         private void maximizeBtn_Click(object sender, RoutedEventArgs e)
         {
-            
         }
     }
 }

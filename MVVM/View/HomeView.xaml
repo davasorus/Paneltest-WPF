@@ -6,7 +6,7 @@
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="Discover"
+        <TextBlock Text="Home Page"
                    Foreground="White"
                    FontSize="28"
                    HorizontalAlignment="Left"
@@ -39,12 +39,6 @@
                                    FontSize="18"
                                    Margin="20,10,10,0" />
                     </StackPanel>
-
-                    <Image Width="166"
-                           Height="168"
-                           Source="/Images/G5L9qP30_400x400.ico"
-                           HorizontalAlignment="Right"
-                           VerticalAlignment="Bottom" />
                 </Grid>
             </Border>
             <Border Width="200"

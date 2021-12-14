@@ -40,49 +40,53 @@
 
             <StackPanel Grid.Row="1">
 
-                <materialDesign:Card>
+                <materialDesign:Card >
                     <Button Content="Home"
                              Height="50"
                              FontSize="14"
                              Command="{Binding HomeViewCommand}"
-                            Margin="1,1,1,1"/>
+                            Margin="1,1,1,1" />
                 </materialDesign:Card>
 
                 <materialDesign:Card>
                     <Button Content="Test1"
                              Height="50"
                              FontSize="14"
-                             Command="{Binding newView1ViewCommand}" 
-                            Margin="1,1,1,1"/>
+                             Command="{Binding newView1ViewCommand}"
+                            Margin="1,1,1,1" />
                 </materialDesign:Card>
 
-                <Button Content="Test2"
+                <materialDesign:Card>
+                    <Button Content="Test2"
                              Height="50"
-                             FontSize="14" />
-                <Button Content="Test3"
+                             FontSize="14" 
+                            Command="{Binding newView2ViewCommand}"
+                            Margin="1,1,1,1"/>
+                </materialDesign:Card>
+                <materialDesign:Card>
+                    <Button Content="Test3"
                              Height="50"
-                             FontSize="14" />
+                             FontSize="14"
+                            Margin="1,1,1,1"/>
+                </materialDesign:Card>
             </StackPanel>
 
             <ContentControl Grid.Row="1"
                             Grid.Column="1"
                             Margin="10"
                             Content="{Binding CurrentView}" />
-            <Button x:Name="closeBtn" Grid.Column="1" 
-                    Content="{materialDesign:PackIcon close}" HorizontalAlignment="Left" 
-                    Margin="671,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="closeBtn_Click" Height="27" Width="47"
-                    />
-            <Button x:Name="maximizeBtn" Grid.Column="1" 
-                Content="{materialDesign:PackIcon WindowMaximize}" HorizontalAlignment="Left" 
-                Margin="633,0,0,0" VerticalAlignment="Top" 
-                    Background="{x:Null}" BorderBrush="{x:Null}" 
-                    Foreground="White" Height="27" Width="48" 
-                    Click="maximizeBtn_Click"
-                    />
-            <Button x:Name="minButton" Grid.Column="1" 
-                    Content="{materialDesign:PackIcon WindowMinimize}" HorizontalAlignment="Left" 
-                    Margin="602,3,0,0" VerticalAlignment="Top" Width="39" Background="{x:Null}" BorderBrush="{x:Null}" Height="24"
-                    />
+            <Button x:Name="closeBtn" Grid.Column="1"
+                    Content="{materialDesign:PackIcon close}" HorizontalAlignment="Left"
+                    Margin="671,0,0,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="closeBtn_Click" Height="27" Width="47" />
+            <Button x:Name="maximizeBtn" Grid.Column="1"
+                Content="{materialDesign:PackIcon WindowMaximize}" HorizontalAlignment="Left"
+                Margin="633,0,0,0" VerticalAlignment="Top"
+                    Background="{x:Null}" BorderBrush="{x:Null}"
+                    Foreground="White" Height="27" Width="48"
+                    Click="maximizeBtn_Click" />
+            <Button x:Name="minButton" Grid.Column="1"
+                    Content="{materialDesign:PackIcon WindowMinimize}" HorizontalAlignment="Left"
+                    Margin="602,3,0,0" VerticalAlignment="Top" Width="39" Background="{x:Null}" BorderBrush="{x:Null}" Height="24" />
         </Grid>
     </Border>
 </Window>

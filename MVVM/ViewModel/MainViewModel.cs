@@ -2,13 +2,15 @@
 
 namespace Paneltest_WPF.MVVM.ViewModel
 {
-    internal class MainViewModel : observableObject
+    class MainViewModel : observableObject
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand newView1ViewCommand { get; }
+        public RelayCommand newView2ViewCommand { get; set; }
 
         public HomeViewModel HomeVM { get; set; }
         public newView1ViewModel newView1VM { get; set; }
+        public newView2ViewModel newView2VM { get; set; }
 
         private object _currentView;
 
@@ -26,6 +28,7 @@ namespace Paneltest_WPF.MVVM.ViewModel
         {
             HomeVM = new HomeViewModel();
             newView1VM = new newView1ViewModel();
+            newView2VM = new newView2ViewModel();
 
             CurrentView = HomeVM;
 
@@ -37,6 +40,11 @@ namespace Paneltest_WPF.MVVM.ViewModel
             newView1ViewCommand = new RelayCommand(o =>
             {
                 CurrentView = newView1VM;
+            });
+
+            newView2ViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = newView2VM;
             });
         }
     }
