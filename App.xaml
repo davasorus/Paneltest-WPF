@@ -10,7 +10,7 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <materialDesign:CustomColorTheme BaseTheme="Inherit" PrimaryColor="LightBlue"  SecondaryColor="LightGreen" />
+                <materialDesign:CustomColorTheme BaseTheme="Inherit" PrimaryColor="#FF43568F"  SecondaryColor="#FF8E9B4A" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.Indigo.xaml" />
             </ResourceDictionary.MergedDictionaries>
