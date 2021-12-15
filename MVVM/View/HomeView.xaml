@@ -36,14 +36,14 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="This is a test from startup page" 
+                        <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
-                        <TextBlock Text="This is a test from startup page" 
+                           HorizontalAlignment="Center" />
+                        <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                     </StackPanel>
                 </Grid>
             </Border>
@@ -59,10 +59,10 @@
                     </LinearGradientBrush>
                 </Border.Background>
 
-                <TextBlock Text="This is a test from startup page" 
+                <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
             </Border>
         </StackPanel>
 
@@ -86,37 +86,37 @@
                         Background="#844eff"
                         CornerRadius="10"
                         Margin="0">
-                    <TextBlock Text="This is a test from startup page" 
+                    <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#4e99ff"
                         CornerRadius="10">
-                    <TextBlock Text="This is a test from startup page" 
+                    <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#4eff91"
                         CornerRadius="10">
-                    <TextBlock Text="This is a test from startup page" 
+                    <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
                         CornerRadius="10">
-                    <TextBlock Text="This is a test from startup page" 
+                    <TextBlock Text="This is a test from startup page"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
             </StackPanel>
         </StackPanel>

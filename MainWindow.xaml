@@ -24,7 +24,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="250" />
                 <ColumnDefinition Width="89*" />
-                <ColumnDefinition Width="45*"/>
+                <ColumnDefinition Width="45*" />
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
@@ -88,7 +88,7 @@
                             Content="{Binding CurrentView}" Grid.ColumnSpan="2" />
 
             <materialDesign:ColorZone materialDesign:ColorZoneAssist.Foreground="DarkGray" Grid.Column="1" Grid.ColumnSpan="2">
-                <materialDesign:ColorZone Mode="SecondaryDark" Height="67">
+                <materialDesign:ColorZone x:Name="titleZone" Mode="SecondaryDark" Height="67" MouseLeftButtonDown="mouseLeftButtonDown">
                     <TextBlock x:Name="formNameLbl" Text="Label Test"
                                VerticalAlignment="Center"
                                HorizontalAlignment="Center"
@@ -113,14 +113,13 @@
                     HorizontalAlignment="Left"
                     Margin="97,0,0,0" VerticalAlignment="Top"
                     Background="{x:Null}" BorderBrush="{x:Null}"
-                    Foreground="White" />
+                    Foreground="White" Click="minButton_Click" />
             <Image HorizontalAlignment="Left" Height="59" Margin="0,6,0,0"
                    VerticalAlignment="Top" Width="47"
                    Source="/G5L9qP30_400x400.ico" />
-            <Button x:Name="updateBtn" Grid.Column="2" Content="{materialDesign:PackIcon BellCircle,Size=36}" 
-                    HorizontalAlignment="Left" Margin="43,-3,0,0" 
+            <Button x:Name="updateBtn" Grid.Column="2" Content="{materialDesign:PackIcon BellCircle,Size=36}"
+                    HorizontalAlignment="Left" Margin="43,-3,0,0"
                     VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Height="43" />
-
         </Grid>
     </Border>
 </Window>

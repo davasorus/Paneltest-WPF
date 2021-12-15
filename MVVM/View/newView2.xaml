@@ -24,10 +24,10 @@
                     CornerRadius="10"
                     Margin="45,0,0,0">
 
-                <TextBlock Text="This is a test from Page 2" 
+                <TextBlock Text="This is a test from Page 2"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
 
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
@@ -56,19 +56,19 @@
                         Height="150"
                         Background="#4eff91"
                         CornerRadius="10">
-                    <TextBlock Text="This is a test from Page 2" 
+                    <TextBlock Text="This is a test from Page 2"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
                 <Border Width="150"
                         Height="150"
                         Background="#ecff4e"
                         CornerRadius="10">
-                    <TextBlock Text="This is a test from Page 2" 
+                    <TextBlock Text="This is a test from Page 2"
                            Foreground="Black" TextWrapping="WrapWithOverflow"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Center"/>
+                           HorizontalAlignment="Center" />
                 </Border>
             </StackPanel>
         </StackPanel>
